@@ -17,6 +17,6 @@ for (char symbol : DNAString){
 if (totalLetters=0){
     return 0;
 }
-double DNA = (static_cast<double>(GCLetter) / totalLetters) * 100.0;
+int DNA = (GCLetter * 100) / totalLetters;
 return DNA;
 }
