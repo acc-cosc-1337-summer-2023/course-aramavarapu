@@ -3,6 +3,6 @@
 #include "repetition.cpp"
 
 TEST_CASE("Test get_gc_content function", "verification") {
-	REQUIRE(Test get_gc_content function(AGCTATAG) == .375);
+	REQUIRE(Test get_gc_content function("AGCTATAG") == .375);
 }
 

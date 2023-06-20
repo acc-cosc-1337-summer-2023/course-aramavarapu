@@ -1,6 +1,7 @@
 //add include statements
 #include <iostream>
 #include <string>
+#include "repetition.h"
 //add function(s) code here
 double get_gc_content(const std::string& DNAString) {
     int totalLetters = 0;
