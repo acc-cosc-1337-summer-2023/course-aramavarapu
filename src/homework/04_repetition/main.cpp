@@ -10,7 +10,7 @@ std::string DNASequence;
 		std::cout << "Enter the DNA sequence: ";
 		std::cin >> DNASequence;
 		double DNA = get_gc_content(DNASequence);
-		std::cout << "GC content: " << DNA << "%" << "\n";
+		std::cout << "GC content: " << DNA << "\n";
 		std::cout << "Continue? (y/n): ";
 		std::string choice;
 		std::cin >> choice;

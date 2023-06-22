@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 //add function code here
-int get_vector_max_value(const std::vector<int>& vect) {
+int get_vector_max_value(const std::vector<int> &vect) {
     if (vect.empty()) {
         return 0;
     }
