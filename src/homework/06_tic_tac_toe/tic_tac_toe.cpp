@@ -34,9 +34,18 @@ void TicTacToe::mark_board(int position)
 
 void TicTacToe::display_board() const
 {
-    for(long unsigned int i=0; i < pegs.size(); i += 3)
+    int size = static_cast<int>(pegs.size());
+    int num_rows = size == 9 ? 3 : 4;
+    int num_columns = size == 9 ? 3 : 4;
+
+    for (int i = 0; i < num_rows; ++i)
     {
-        cout<<pegs[i]<<"|"<<pegs[i+1]<<"|"<<pegs[i+2]<<"\n";
+        for (int j = 0; j < num_columns; ++j)
+        {
+            int index = i * num_columns + j;
+            cout << pegs[index] << "|";
+        }
+        cout << "\n";
     }
 }
 std::string TicTacToe::get_winner() const
